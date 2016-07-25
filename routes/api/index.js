@@ -4,7 +4,7 @@
 const express = require('express');
 const router = express.Router();
 
-router.all('/', function(req, res, next) {
+router.all('/', (req, res, next) => {
   res.send({status: 'OK', version: '1.0'})
 });
 

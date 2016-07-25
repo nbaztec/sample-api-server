@@ -4,7 +4,7 @@ const authToken = require('../middlewares/auth-token');
 const jwtHelper = require('../helpers/jwt')();
 const config = require('../config');
 
-router.all('/', function(req, res, next) {
+router.all('/', (req, res, next) => {
   res.send({status: 'OK'});
 });
 
