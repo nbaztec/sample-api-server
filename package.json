@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "test": "mocha ./tests",
-    "test-coverage": "./node_modules/istanbul/lib/cli.js cover -x '**/config/**' -x 'app.js' ./node_modules/mocha/bin/_mocha -- ./tests"
+    "test-coverage": "$(npm bin)/istanbul cover -x '**/config/**' -x 'app.js' $(npm bin)/_mocha -- ./tests"
   },
   "dependencies": {
     "body-parser": "~1.15.1",
